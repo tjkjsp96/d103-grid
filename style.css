@@ -1,0 +1,67 @@
+body{
+    display: grid;
+    font-family: 'Marvel', sans-serif;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                         'header header header header'
+                         'section section section batata'
+                         'footer footer footer footer';
+    grid-template-rows: 10vh 400px 20vh 15vh;
+    grid-template-columns: 25vw 25vw 20vw 30vw;
+    margin: 0%;
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+nav{    
+    align-items: center;
+    display: flex;
+    grid-area: navbar;
+    justify-content: space-between;
+    background-color: #4178BF;
+}
+
+nav div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+nav div{
+    margin-left: 20px;
+}
+
+a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+header{
+    grid-area: header;
+    background-image: url("image/avengers.jpeg")
+}
+
+section{
+    grid-area: section;
+    background-color: #26011C;
+    color: white;
+    
+}
+
+aside{
+    grid-area: batata;
+    background-color: #733E39;  
+}
+
+footer{
+    grid-area: footer;
+    background-color: darkgray;
+}
+
+aside img{
+    width: 130px;
+}
+
